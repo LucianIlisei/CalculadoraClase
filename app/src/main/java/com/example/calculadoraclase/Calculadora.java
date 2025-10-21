@@ -7,6 +7,10 @@ public class Calculadora {
     private double memoria;
     private char operacion;
 
+    public String getContenido() {
+        return contenido;
+    }
+
     private Calculadora() {
         this.contenido = "";
     }
