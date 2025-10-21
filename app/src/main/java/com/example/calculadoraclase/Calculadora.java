@@ -56,14 +56,14 @@ public class Calculadora {
             case '-':
                 this.contenido = formatear(this.memoria - segundo);
                 break;
-            case '*':
+            case 'x':
                 this.contenido = formatear(this.memoria * segundo);
                 break;
             case '/':
                 if (segundo == 0) {
                     this.contenido = "∞";
                 } else {
-                    this.contenido = String.valueOf(this.memoria / segundo);
+                    this.contenido = formatear(this.memoria / segundo);
                 }
                 break;
             default:

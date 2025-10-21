@@ -57,6 +57,13 @@ class MainActivity : AppCompatActivity() {
             txtResultado.text = "0"
         }
 
+        val btnPunto = findViewById<Button>(R.id.btnPunto)
+        btnPunto.setOnClickListener {
+            calc.añadirPunto()
+            txtResultado.text = calc.contenido
+        }
+
 
     }
+
 }
